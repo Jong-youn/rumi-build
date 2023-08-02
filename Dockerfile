@@ -22,7 +22,7 @@ RUN echo 'root:root' | chpasswd
 RUN echo $USER':serve123' | chpasswd
 
 # java 환경변수
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 
 ENTRYPOINT sudo service ssh restart && bash
 
